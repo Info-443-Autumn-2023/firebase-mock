@@ -1,4 +1,4 @@
-# Firebase Mock (Wi 22)
+# Firebase Mock (Au 23)
 
 This repository contains code for (partially) mocking Firebase in Jest. Mocks v9 of the Firebase SDK only.
 
@@ -9,5 +9,5 @@ Current functionality:
 ## Usage
 Copy the `setupTests.js` file into the `src` folder of a Create React App project. This will mock or stub No further configuration should be necessary.
 
-## Customization 
+## Customization
 You can customize the "initial" realtime database contents or the details about the mock authenticate user by modifying the `MOCK_INITIAL_DATA` and `MOCK_USER` constants.
