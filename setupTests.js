@@ -89,7 +89,7 @@ class MockSnapshot {
 
   val() {
     const value = this.ref.pathSegments.reduce((acc, child) => {
-      return acc[child]
+      return acc ? acc[child] : null
     }, this.ref.db.data) //access data directly
     return value;
   }
