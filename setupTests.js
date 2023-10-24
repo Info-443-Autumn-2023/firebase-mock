@@ -143,6 +143,7 @@ jest.mock('firebase/auth', () => {
     getAuth: () => {
       return auth;
     },
+    signOut: async () => {},
     onAuthStateChanged: (auth, callback) => {
       callback(MOCK_USER); //"log in" the mock user
       return () => { } //off
