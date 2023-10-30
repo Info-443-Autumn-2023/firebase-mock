@@ -93,6 +93,10 @@ class MockSnapshot {
     }, this.ref.db.data) //access data directly
     return value;
   }
+
+  exists() {
+    return this.val() != null;
+  }
 }
 
 jest.mock('firebase/database', () => {
